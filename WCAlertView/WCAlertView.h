@@ -48,56 +48,56 @@ typedef void(^CustomizationBlock)(WCAlertView *alertView);
 /*
  *  Predefined alert styles
  */
-@property (nonatomic,assign) WCAlertViewStyle style;
+@property (nonatomic,assign) WCAlertViewStyle style UI_APPEARANCE_SELECTOR;
 
 /*
  *  Title and message label styles
  */
-@property (nonatomic,strong) UIColor *labelTextColor;
-@property (nonatomic,strong) UIColor *labelShadowColor;
-@property (nonatomic,assign) CGSize   labelShadowOffset;
-@property (nonatomic,strong) UIFont  *titleFont;
-@property (nonatomic,strong) UIFont  *messageFont;
+@property (nonatomic,strong) UIColor *labelTextColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIColor *labelShadowColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGSize   labelShadowOffset UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIFont  *titleFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIFont  *messageFont UI_APPEARANCE_SELECTOR;
 
 /*
  *  Button styles
  */
-@property (nonatomic,strong) UIColor *buttonTextColor;
-@property (nonatomic,strong) UIFont  *buttonFont;
-@property (nonatomic,strong) UIColor *buttonShadowColor;
-@property (nonatomic,assign) CGSize   buttonShadowOffset;
-@property (nonatomic,assign) CGFloat  buttonShadowBlur;
+@property (nonatomic,strong) UIColor *buttonTextColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIFont  *buttonFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIColor *buttonShadowColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGSize   buttonShadowOffset UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGFloat  buttonShadowBlur UI_APPEARANCE_SELECTOR;
 
 /*
  *  Background gradient colors and locations
  */
-@property (nonatomic,strong) NSArray *gradientLocations;
-@property (nonatomic,strong) NSArray *gradientColors;
+@property (nonatomic,strong) NSArray *gradientLocations UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) NSArray *gradientColors UI_APPEARANCE_SELECTOR;
 
-@property (nonatomic,assign) CGFloat cornerRadius;
+@property (nonatomic,assign) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
 /*
  * Inner frame shadow (optional)
  * Stroke path to cover up pixialation on corners from clipping!
  */
-@property (nonatomic,strong) UIColor *innerFrameShadowColor;
-@property (nonatomic,strong) UIColor *innerFrameStrokeColor;
+@property (nonatomic,strong) UIColor *innerFrameShadowColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIColor *innerFrameStrokeColor UI_APPEARANCE_SELECTOR;
 
 /*
  * Hatched lines
  */
-@property (nonatomic,strong) UIColor *verticalLineColor;
+@property (nonatomic,strong) UIColor *verticalLineColor UI_APPEARANCE_SELECTOR;
 
-@property (nonatomic,strong) UIColor *hatchedLinesColor;
-@property (nonatomic,strong) UIColor *hatchedBackgroundColor;
+@property (nonatomic,strong) UIColor *hatchedLinesColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIColor *hatchedBackgroundColor UI_APPEARANCE_SELECTOR;
 
 /*
  *  Outer frame color
  */
-@property (nonatomic,strong) UIColor *outerFrameColor;
-@property (nonatomic,assign) CGFloat  outerFrameLineWidth;
-@property (nonatomic,strong) UIColor *outerFrameShadowColor;
-@property (nonatomic,assign) CGSize   outerFrameShadowOffset;
-@property (nonatomic,assign) CGFloat  outerFrameShadowBlur;
+@property (nonatomic,strong) UIColor *outerFrameColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGFloat  outerFrameLineWidth UI_APPEARANCE_SELECTOR;
+@property (nonatomic,strong) UIColor *outerFrameShadowColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGSize   outerFrameShadowOffset UI_APPEARANCE_SELECTOR;
+@property (nonatomic,assign) CGFloat  outerFrameShadowBlur UI_APPEARANCE_SELECTOR;
 
 /*
  *  Setting default appearance for all WCAlertView's
